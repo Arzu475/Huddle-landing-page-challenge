@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background: var(--Violet) url(images/bg-desktop.svg) no-repeat;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.nav-logo{
+   width: 88%;
+   display: flex;
+   margin: 2.5rem auto 5rem;
+}
+
+.logo img{
+    display: block;
+    max-width: 100%;
+}
+
+.container-content{
+    width: 87%;
+    display: flex;
+    gap: 3rem;
+    position: relative;
+}
+
+.hero-image img{
+    display: block;
+    max-width: 100%;
+}
+
+.main-content{
+    max-width: 24rem;
+    margin-top: 3.3rem;
+}
+
+.main-content > h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.main-content > p{
+    font-family: 'Open Sans', sans-serif;
+    color: #dddada;
+   width: 28.5rem;
+   margin-bottom: 1rem;
+   font-weight: 400;
+}
+
+.main-content > button{
+    display: block;
+    padding: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Violet);
+    width: 44%;
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0.3rem 0.4rem 0.5rem rgba(0, 0, 0, 0.288);
+    cursor: pointer;
+    transition: button 0.5s 0.2s ease-in;
+}
+
+.main-content > button:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+
+.socialmedia-logo{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transform: translateY(12.5rem);
+}
+
+.socialmedia-logo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.socialmedia-logo ul li{
+    list-style: none;
+    margin: 0 0.5rem;
+    border: 0.1rem solid #fff;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border 0.5s 0.1s ease-in;
+}
+
+.socialmedia-logo ul li:hover{
+    border: 0.1rem solid var(--Soft-Magenta);
+}
+
+.attribution{
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    body{
+        background: url(images/bg-mobile.svg) var(--Violet) no-repeat;
+    }
+  .nav-logo {
+    width: 80%;
+    margin: 2rem auto 4rem;
+  }
+
+  .logo img{
+    max-width: 50%;
+  }
+
+  .container-content {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .main-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .main-content > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-content > p {
+    width: 85%;
+    margin: 0 auto 2rem;
+    font-size: 0.85rem;
+  }
+
+  .main-content > button {
+    width: 70%;
+    margin: 0 auto 3.5rem;
+  }
+
+  .socialmedia-logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform: none;
+  }
+
+  .socialmedia-logo ul li {
+    margin: 0 0.3rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .nav-logo {
+    width: 80%;
+    margin: 1.5rem auto 3rem;
+  }
+
+  .container-content {
+    width: 80%;
+  }
+
+  .main-content {
+    margin-top: 2.5rem;
+  }
+
+  .main-content > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .main-content > p {
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .main-content > button {
+    width: 60%;
+    margin-bottom: 1.8rem;
+  }
+
+  .socialmedia-logo {
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .socialmedia-logo ul li {
+    margin: 0 0.4rem;
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+}
